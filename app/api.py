@@ -21,25 +21,26 @@ def dev_env():
 @app.route("/prod/openregistration",methods=["post"])
 def open_registration():
     content = request.json
-    first_name = content["firstName"]
-    last_name = content["lastName"]
-    phone = content["phone"]
+    name = content["name"]
+    gender = content["gender"]
+    # phone = content["phone"]
     email = content["email"]
     status = content['status']
     department = content["department"]
+    consent = content["consent"]
     username = str(uuid.uuid4())
     password = ""
     db = get_db()
     error = None
-    if not first_name:
-        error = "first name not defined"
+    if not name:
+        error = "name not defined"
     elif not status:
         error = "student status not defined"
     if error is None:
         try:
             db.execute(
-                "INSERT INTO user (username, password, first_name, last_name, phone, email, status, department) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
-                (username, password, first_name, last_name, phone, email, status, department),
+                "INSERT INTO user (username, password, name, email, status, department, consent, gender) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+                (username, password, name, email, status, department, consent, gender),
             )
             db.commit()
             return "OK"
