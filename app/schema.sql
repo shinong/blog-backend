@@ -6,19 +6,15 @@ CREATE TABLE user (
   username TEXT UNIQUE NOT NULL,
   password TEXT,
   name TEXT NOT NULL,
---   phone TEXT,
-  email TEXT,
-  status TEXT NOT NULL,
-  department TEXT,
-  consent TEXT,
-  gender TEXT
+  avatar TEXT
 );
 
--- CREATE TABLE post (
---   id INTEGER PRIMARY KEY AUTOINCREMENT,
---   author_id INTEGER NOT NULL,
---   created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
---   title TEXT NOT NULL,
---   body TEXT NOT NULL,
---   FOREIGN KEY (author_id) REFERENCES user (id)
--- );
+CREATE TABLE post (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  author_id INTEGER NOT NULL,
+  created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  title TEXT,
+  body TEXT NOT NULL,
+  location TEXT,
+  FOREIGN KEY (author_id) REFERENCES user (id)
+);

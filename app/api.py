@@ -11,6 +11,7 @@ from app.db import get_db
 @app.route("/dev/env")
 def dev_env():
     return {
+        "project": "blog-backend",
         "backend":"Flask",
         "os": platform.platform()
     }
@@ -18,6 +19,29 @@ def dev_env():
 ## prod routes:
 
 # this is the endpoint for open form registration
+@app.router("/prod/registration", methods=("post"))
+def user_registration():
+    content = request.json
+    username = content["username"]
+    password = content["password"]
+    name = content["name"]
+    avatar = content["avatar"]
+    if not username:
+        return "username not defined"
+    if not name:
+        return "name not defined"
+    try:
+        db.execute("INSERT INTO user (username, password, name, avatar) VALUES (?,?,?,?)"), (username, password, name, avatar)
+        db.commit()
+        return "OK"
+    except db.IntegrityError:
+        return f"User {username} is already registered."
+    
+@app.router("/prod/addpost", methods=("post"))
+def add_post():
+    return "OK"
+
+
 @app.route("/prod/openregistration",methods=["post"])
 def open_registration():
     content = request.json
