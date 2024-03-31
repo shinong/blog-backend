@@ -7,7 +7,7 @@
       "type": "process",
       "args": [
         "build",
-        "${workspaceFolder}/BlogApi.csproj",
+        "${workspaceFolder}/BlogApi/BlogApi.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary;ForceNoAlign"
       ],
@@ -33,7 +33,7 @@
         "watch",
         "run",
         "--project",
-        "${workspaceFolder}/BlogApi.csproj"
+        "${workspaceFolder}/BlogApi/BlogApi.csproj"
       ],
       "problemMatcher": "$msCompile"
     }
