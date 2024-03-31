@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OL77SY05lkygdx8aZ/B2yghUAXh2kJkHXS0lqJOFhhidVrmwBn29KD2MmDVWpoedyiSnZ+1Ip8ZvSX0xOAz8ow==",
+  "dgSpecHash": "ls0yVz3ceS2Z8LBqeGcB+L4QKpQZZf86xAWsTTxfxIaeyrbxIugOr0o7jBdw6/JPgoRZC4W9JGxGN4TE4GmI4A==",
   "success": true,
-  "projectFilePath": "/Users/shinongmao/Desktop/personal/blog-backend/BlogApi/BlogApi.csproj",
+  "projectFilePath": "/Users/shinongmao/Desktop/personal/blog-backend/BlogApi.csproj",
   "expectedPackageFiles": [
     "/Users/shinongmao/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/Users/shinongmao/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",

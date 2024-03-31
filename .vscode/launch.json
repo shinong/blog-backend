@@ -9,9 +9,9 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build",
-      "program": "${workspaceFolder}/BlogApi/bin/Debug/net6.0/BlogApi.dll",
+      "program": "${workspaceFolder}/bin/Debug/net6.0/BlogApi.dll",
       "args": [],
-      "cwd": "${workspaceFolder}/BlogApi",
+      "cwd": "${workspaceFolder}",
       "stopAtEntry": false,
       "serverReadyAction": {
         "action": "openExternally",

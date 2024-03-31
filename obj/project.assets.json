@@ -442,11 +442,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/shinongmao/Desktop/personal/blog-backend/BlogApi/BlogApi.csproj",
+      "projectUniqueName": "/Users/shinongmao/Desktop/personal/blog-backend/BlogApi.csproj",
       "projectName": "BlogApi",
-      "projectPath": "/Users/shinongmao/Desktop/personal/blog-backend/BlogApi/BlogApi.csproj",
+      "projectPath": "/Users/shinongmao/Desktop/personal/blog-backend/BlogApi.csproj",
       "packagesPath": "/Users/shinongmao/.nuget/packages/",
-      "outputPath": "/Users/shinongmao/Desktop/personal/blog-backend/BlogApi/obj/",
+      "outputPath": "/Users/shinongmao/Desktop/personal/blog-backend/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/shinongmao/.nuget/NuGet/NuGet.Config"
